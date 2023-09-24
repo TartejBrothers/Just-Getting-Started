@@ -23,7 +23,7 @@ function Login() {
         <div className="right">
           <div className="rightcontainer">
             <h5>LOGIN</h5>
-            <form>
+            <form method="post" action="/#">
               <input
                 type="text"
                 name="name"
@@ -69,7 +69,7 @@ function Login() {
               <img src={apple} alt="" />
             </div>
             <p>
-              Don’t have an account? <a href="#">Sign up</a> now
+              Don’t have an account? <a href="/#">Sign up</a> now
             </p>
           </div>
         </div>
