@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import React from "react";
+
 import "./styles/login.css";
 import loginvector from "./assets/loginvector.png";
 import ellipse from "./assets/ellipse.png";
@@ -7,7 +10,16 @@ import sendicon from "./assets/sendicon.png";
 import apple from "./assets/apple.png";
 import google from "./assets/google.png";
 import facebook from "./assets/fb.png";
+
 function Login() {
+  const changeType = () => {
+    var x = document.getElementById("password");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  };
   return (
     <>
       <div className="container">
@@ -16,7 +28,6 @@ function Login() {
             <img src={loginvector} alt="loginvector" />
             <img src={vectorline} alt="Vector line" className="vectorline" />
             <img src={sendicon} alt="send" className="sendicon" />
-
             <img src={ellipse} alt="Graphics" className="ellipse" />
           </div>
         </div>
@@ -33,12 +44,18 @@ function Login() {
               />
               <br />
               <div className="inputfield">
-                <img src={unhide} alt="password" className="passwordicon" />
+                <img
+                  src={unhide}
+                  alt="password"
+                  className="passwordicon"
+                  onClick={changeType}
+                />
                 <input
-                  type="text"
+                  type="password"
                   name="password"
                   placeholder="Password"
                   required
+                  id="password"
                 />
               </div>
               <div className="forgottext">
@@ -50,11 +67,11 @@ function Login() {
                   value="Login"
                   style={{
                     width: "50%",
-                    fontsize: "14px",
+                    fontSize: "14px", // Corrected typo in fontSize
                     padding: "10px",
                     background: "#F28D00",
                     color: "#fff",
-                    justify: "center",
+                    justifyContent: "center", // Corrected typo in justifyContent
                     margin: "20px auto 20px auto",
                   }}
                 />
@@ -69,7 +86,7 @@ function Login() {
               <img src={apple} alt="" />
             </div>
             <p>
-              Don’t have an account? <a href="/#">Sign up</a> now
+              Don’t have an account? <Link to="/signup">Sign Up</Link> now
             </p>
           </div>
         </div>
@@ -77,4 +94,5 @@ function Login() {
     </>
   );
 }
+
 export default Login;

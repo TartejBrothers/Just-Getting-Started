@@ -1,0 +1,7 @@
+.inputfieldhalf {
+  width: 45%;
+}
+.halffields {
+  display: flex;
+  gap: 10px;
+}
