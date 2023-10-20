@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import "./styles/login.css";
 import "./styles/signup.css";
-
+import leftsignup from "./assets/leftsignup.png";
 import unhide from "./assets/unhide.png";
 
 import vectors from "./assets/signupvectors.png";
@@ -20,8 +20,8 @@ function SignUp() {
   return (
     <>
       <div className="container">
-        <div className="left">
-          <div className="leftcontainer">
+        <div className="leftsignup">
+          <div className="leftcontainersignup">
             <img src={vectors} alt="vectors" />
           </div>
         </div>
@@ -114,32 +114,36 @@ function SignUp() {
               <div className="halffields">
                 <input
                   type="text"
-                  name="Designation"
-                  placeholder="Designation"
-                  style={{ marginBottom: "20px" }}
+                  name="country"
+                  placeholder="Country"
                   required
                   className="inputfieldhalf"
                 />
                 <br />
                 <input
                   type="text"
-                  name="Regno"
-                  placeholder="Registration Number"
-                  style={{ marginBottom: "20px" }}
+                  name="state"
+                  placeholder="State"
                   required
                   className="inputfieldhalf"
                 />
                 <br />
                 <input
                   type="text"
-                  name="Regno"
-                  placeholder="Registration Number"
-                  style={{ marginBottom: "20px" }}
+                  name="city"
+                  placeholder="City"
                   required
                   className="inputfieldhalf"
                 />
               </div>
               <br />
+              <input
+                type="text"
+                name="college"
+                placeholder="Address"
+                style={{ marginBottom: "20px" }}
+                required
+              />
               <div className="inputfield">
                 <img
                   src={unhide}
@@ -154,10 +158,19 @@ function SignUp() {
                   required
                 />
               </div>
-
-              <div className="forgottext">
-                <p>Forgot Password?</p>
+              <div className="checkboxfield">
+                <input
+                  type="checkbox"
+                  name="agreement"
+                  required
+                  id="agreement"
+                />
+                <label for="agreement">
+                  Hereby, I agree to the <a href="#">Terms & Condition</a> and{" "}
+                  <a href="#">Privacy Policy </a>
+                </label>
               </div>
+
               <div className="submitbutton">
                 <input
                   type="submit"
@@ -174,7 +187,6 @@ function SignUp() {
                 />
               </div>
             </form>
-
 
             <p>
               Already Have an Account <Link to="/login">Login</Link>
