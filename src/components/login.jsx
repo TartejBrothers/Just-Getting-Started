@@ -25,7 +25,7 @@ function Login() {
       <div className="container">
         <div className="left">
           <div className="leftcontainer">
-            <img src={loginvector} alt="loginvector" />
+            <img src={loginvector} alt="loginvector" className="loginvector" />
             <img src={vectorline} alt="Vector line" className="vectorline" />
             <img src={sendicon} alt="send" className="sendicon" />
             <img src={ellipse} alt="Graphics" className="ellipse" />

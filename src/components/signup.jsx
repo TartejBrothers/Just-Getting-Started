@@ -34,7 +34,6 @@ function SignUp() {
                   type="text"
                   name="fname"
                   placeholder="First Name"
-                  style={{ marginBottom: "20px" }}
                   required
                   className="inputfieldhalf"
                 />
@@ -43,7 +42,6 @@ function SignUp() {
                   type="text"
                   name="lname"
                   placeholder="Last Name"
-                  style={{ marginBottom: "20px" }}
                   required
                   className="inputfieldhalf"
                 />
@@ -53,7 +51,6 @@ function SignUp() {
                   type="text"
                   name="gender"
                   placeholder="Gender"
-                  style={{ marginBottom: "20px" }}
                   required
                   className="inputfieldhalf"
                 />
@@ -61,7 +58,6 @@ function SignUp() {
                 <input
                   type="date"
                   name="name"
-                  style={{ marginBottom: "20px" }}
                   required
                   className="inputfieldhalf"
                 />
@@ -71,7 +67,6 @@ function SignUp() {
                   type="text"
                   name="cname"
                   placeholder="Contact Number "
-                  style={{ marginBottom: "20px" }}
                   required
                   className="inputfieldhalf"
                 />
@@ -80,7 +75,6 @@ function SignUp() {
                   type="email"
                   name="email"
                   placeholder="Email ID"
-                  style={{ marginBottom: "20px" }}
                   required
                   className="inputfieldhalf"
                 />
@@ -97,7 +91,6 @@ function SignUp() {
                   type="text"
                   name="Designation"
                   placeholder="Designation"
-                  style={{ marginBottom: "20px" }}
                   required
                   className="inputfieldhalf"
                 />
@@ -106,7 +99,6 @@ function SignUp() {
                   type="text"
                   name="Regno"
                   placeholder="Registration Number"
-                  style={{ marginBottom: "20px" }}
                   required
                   className="inputfieldhalf"
                 />

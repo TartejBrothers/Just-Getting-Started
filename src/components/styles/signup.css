@@ -21,7 +21,7 @@
   justify-content: center;
   align-items: center;
   background-color: #f0f0f0;
-  width: 55vw;
+  width: 50vw;
 
   overflow: hidden;
   height: 130vh;
@@ -36,6 +36,19 @@
 
   height: 100vh;
   width: 100%;
+}
+.right {
+  z-index: 4;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rightcontainer {
+  width: 80%;
+}
+.rightcontainer form input {
+  margin-bottom: 20px;
 }
 .leftcontainersignup img {
   height: 100%;
@@ -55,4 +68,40 @@
 label a {
   color: #f28d00;
   text-decoration: none;
+}
+@media screen and (max-width: 2000px) {
+  .leftsignup {
+    width: 40vw;
+  }
+  .right {
+    width: 60vw;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+    height: 100%;
+  }
+  .leftsignup {
+    width: 100%;
+    padding: none;
+    align-items: flex-start;
+    height: fit-content;
+  }
+  .leftsignup img {
+    width: 100%;
+    object-fit: contain;
+  }
+  .halffields {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 0px;
+  }
+  .container {
+    padding-bottom: 40px;
+  }
+  .right {
+    width: 100%;
+  }
 }
