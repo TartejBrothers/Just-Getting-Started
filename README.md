@@ -1,7 +1,7 @@
 <h1>Just Getting Started</h1>
 <hr><p>This project has the basic build for a Login and Sign Up Page, made using ReactJs</p><h2>Technologies Used</h2>
-<hr><ul>
-<li><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </li>
+<hr><ul align="center">
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> 
 </ul><h2>Features</h2>
 <hr><ul>
 <li>Responsive View</li>
